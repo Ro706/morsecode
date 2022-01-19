@@ -1,6 +1,9 @@
-#python 3.7.1
 from tqdm import tqdm
 from time import sleep
+from pyfiglet import Figlet
+f = Figlet(font='slant')
+print (f.renderText('morse code'))
+
 MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
                     'C':'-.-.', 'D':'-..', 'E':'.',
                     'F':'..-.', 'G':'--.', 'H':'....',
@@ -95,9 +98,12 @@ while True:
         for i in tqdm(range(100)):
             sleep(0.1)
         en()
+        print (' ')
     elif a == 2:
         for i in tqdm(range(100)):
             sleep(0.1)
         de()
+        print (' ')
     else:
          break
+
